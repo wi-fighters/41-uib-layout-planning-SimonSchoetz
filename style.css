@@ -1,1 +1,10 @@
 /* Basic Style Sheet for responsive design */
+
+/* Smartphone */
+@media (min-width: 576px) { ... }
+
+/* Tablet */
+@media (min-width: 768px) { ... }
+
+/* Desktop */
+@media (min-width: 992px) { ... }
