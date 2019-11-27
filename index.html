@@ -5,21 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Basic Layout Exercise</title>
 </head>
 
 <body>
     <header>
         <h1>Basic Layout Exercise</h1>
+        <nav id="mobile-nav">
 
-        <nav>
+            <div id="burger-icon" onclick="toggleMobileNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
             <ul>
                 <li>Home</li>
-                <li>Nav One</li>
-                <li>Nav Two</li>
-                <li>Nav Three</li>
+                <li>Card One</li>
+                <li>Card Two</li>
+                <li>Card Two</li>
+            </ul>
+        </nav>
+        <nav id="desktop-nav">
+            <ul>
+                <li>Home</li>
+                <li>Card One</li>
+                <li>Card Two</li>
             </ul>
         </nav>
     </header>
@@ -34,7 +47,25 @@
         </section>
     </main>
     <footer>&copy;Footer</footer>
+    <script>
 
+        const minHeight = 40;
+        const maxHeight = 100;
+
+        const toggleMobileNav = () => {
+            const x = document.getElementById("mobile-nav");
+            if (x.style.height === maxHeight + "%") {
+                x.style.height = minHeight + "px";
+            } else {
+                x.style.height = maxHeight + "%";
+            }
+        }
+
+        const hideMobileNav = () => {
+            document.getElementById('mobile-nav').style.height = minHeight + "px"
+        }
+
+    </script>
 </body>
 
 </html>
