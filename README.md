@@ -7,3 +7,5 @@
     - A nav bar 
     - Cards containing info 
     - Footer  
+-------------
+In case you lose the link: https://github.com/wi-fighters/41-uib-layout-planning-SimonSchoetz
